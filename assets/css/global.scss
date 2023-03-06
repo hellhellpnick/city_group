@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.layout {
+    padding: desktop-vw(80);
+}
+
+.empty {
+    font-size: desktop-vw(16);
+    font-family: $font-family-main;
+    color: $color-text-na;
+}
+
+.logo {
+    font-family: $font-family-main;
+    font-weight: $font-weight-bold;
+    color: $color-text-logo-secondary;
+    letter-spacing: desktop-vw(2);
+    font-size: desktop-vw(32);
+
+    span {
+        color: $color-text-logo-primary;
+    }
+}
+
+@include media-tablet-max {
+    .layout {
+        padding: tablet-vw(80) tablet-vw(20);
+    }
+    
+    .empty {
+        font-size: tablet-vw(16);
+    }
+
+    .logo {
+        letter-spacing: tablet-vw(2);
+        font-size: tablet-vw(32);
+    }
+}
+
+@include media-mobile-max {
+    .layout {
+        padding: mobile-vw(20);
+    }
+
+    .empty {
+        font-size: mobile-vw(16);
+    }
+
+    .logo {
+        letter-spacing: mobile-vw(2);
+        font-size: mobile-vw(32);
+    }
+}

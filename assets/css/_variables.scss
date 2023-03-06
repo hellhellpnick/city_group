@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+// === media ===
+$tablet: 1199.5px;
+$mobile: 767.5px;
+// === / media ===
+
+// === width ===
+$mobile-width: 410;
+$tablet-width: 768;
+$desktop-width: 1440;
+// === / width ===
+
+// === time ===
+$timing-function: cubic-bezier(0, 0, 0.04, 0.97);
+$time: .3s;
+$time-text: .5s;
+// === / time ===
+
+// === font ===
+// == weight ==
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+// == / weight ==
+
+// == family ==
+$font-family-main: 'Roboto', sans-serif;;
+// == / family ==
+// === / font ===
+
+// == box shadow ==
+$shadow-main: 0px 1px 2px 0px rgba(0,0,0,0.75);
+// == / box shadow ==
+
+// == btn == 
+$color-btn-main-static: #0037ff;
+$color-btn-main-hover: #0732d1;
+$color-btn-main-active: #0225a2;
+$color-btn-disabled: #909090; 
+// == / btn ==
+// === border ===
+$color-border-main: #d5d5d5;
+$color-border-error: #ff0000;
+
+// == radius ==
+$border-radius-main: 8;
+// == / radius == 
+// === / border ===
+// == icon ==
+$color-icon-main: #909090; 
+$color-icon-primary: #fff; 
+// == / icon ==
+// === colors ===
+// == background ==
+$color-bg-main: #fff;
+$color-bg-primary: #d6d6d6;
+// == / background ==
+// == text ==
+$color-text-main: #1a1a1a;
+$color-text-primary: #fff;
+$color-text-logo-primary: #1F44EA;
+$color-text-logo-secondary: #ffff00;
+$color-text-error: #ff0000;
+$color-text-na: #909090;
+// == / text ==
+
+// == button ==
+$color-button-main: #1F44EA;
+$color-button-main-hover: #3958e3;
+$color-button-main-active:#007bff;
+// == / button ==
+// === / colors ===

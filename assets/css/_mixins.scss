@@ -1,0 +1,59 @@
+// === mixins ===
+// === media queries ===
+@mixin media-tablet-max {
+    @media (max-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin media-mobile-max {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}
+
+// === / media queries ===
+// === constructors ===
+
+@mixin constructor-flex(
+    $justify-content: flex-start,
+    $align-items: normal,
+    $direction: row,
+    $wrap: nowrap 
+) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-wrap: $wrap;
+}
+
+@mixin shadow-constructor($shadow: (0px 12px 14px 0px rgba(0,0,0,0.75))) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+@mixin constructor-svg(
+    $width: 30px, $height: 30px, $fill: #000
+) {
+    fill: $fill;
+    width: $width;
+    height: $height;
+}
+
+// === /constructors ===
+// === other mixins ===
+
+@mixin transition(
+    $transition: (all 0.3s ease)
+) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    -ms-transition: $transition;
+    transition: $transition;
+}
+
+// === / other mixins ===
+// === / mixins ===
