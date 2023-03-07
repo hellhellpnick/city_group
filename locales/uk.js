@@ -8,7 +8,8 @@ export default {
     },
 
     texts: {
-        phone_contract: 'Введіть номер телефону або особовий рахунок послуги'
+        phone_contract: 'Введіть номер телефону або особовий рахунок послуги',
+        exit: "Вихід"
     },
 
     inputs: {
@@ -20,5 +21,11 @@ export default {
         password: {
             password_length: 'Пароль повинен бути більше 4 символів і меньше 6 символів'
         }
+    },
+
+    pages: {
+        profile: 'Профіль',
+        expense: 'Рахунок',
+        main: '',
     }
 }

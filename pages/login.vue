@@ -36,6 +36,8 @@
 
 </template>
 <script>
+import { mapGetters } from 'vuex';
+
 export default {
     name: "login-page",
 
@@ -51,6 +53,18 @@ export default {
                     this.$t("inputs_error.password.password_length"),
             ],
         };
+    },
+
+    computed: {
+        ...mapGetters({
+            authenticated: 'user/authenticated'
+        })
+    },
+
+    mounted(){
+        if(this.authenticated) {
+            this.$router.push('/expense')
+        }
     },
 
     methods: {
@@ -76,11 +90,13 @@ export default {
 <style lang="scss" scoped>
 .layout {
     min-height: 100vh;
+    margin-top: desktop-vw(-80);
     @include constructor-flex(center, center, column);
 }
 
 .login-form {
     width: desktop-vw(600);
+    margin: 0 auto;
 
     &_margin {
         margin-bottom: desktop-vw(24);
